@@ -1,0 +1,7 @@
+nome
+ idade
+ mas
+ kg
+ meytro
+ .com
+ 

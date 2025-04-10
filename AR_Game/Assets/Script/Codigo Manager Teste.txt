@@ -1,0 +1,81 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using Vuforia;
+
+public class GameManager : MonoBehaviour
+{
+    public GameObject UI_InterfaceAdd;
+    public GameObject UI_InterfaceRemove;
+    public Text ScoreText;
+
+    public GameObject[] ID;
+    public int Pontuacao = 0;
+
+    public bool clickedAdd = false;
+    public bool clickedRemove = false;
+
+    void Start()
+    {
+        PlayerPrefs.SetInt("Pontuacao", Pontuacao);
+
+    }
+
+    void Update()
+    {
+        Pontuacao = PlayerPrefs.GetInt("Pontuacao");
+        ScoreText.text = Pontuacao.ToString();
+    }
+
+    /*Add*/
+    public void Show_UIAdd()
+    {
+        UI_InterfaceAdd.SetActive(true);
+        AddScore();
+       
+    }
+    public void Hide_UIAdd()
+    {
+        UI_InterfaceAdd.SetActive(false);
+    }
+    
+     private void AddScore()
+    {
+        if(clickedAdd = true)
+        {
+            Pontuacao++;
+            PlayerPrefs.SetInt("Pontuacao", Pontuacao);
+            
+        }
+       
+       
+    }
+
+    /*Remove*/
+    public void Show_UIARemove()
+    {
+        UI_InterfaceRemove.SetActive(true);
+        RemoveScore();
+       
+    }
+    public void Hide_UIRemove()
+    {
+        ID[0].SetActive(false);
+    }
+
+    private void RemoveScore()
+    {
+        if(clickedRemove == true)
+        {
+            Pontuacao--;
+            if(Pontuacao<0)
+            {
+            Pontuacao =0;
+            }
+            PlayerPrefs.SetInt("Pontuacao", Pontuacao);
+        }
+       
+    }
+
+}

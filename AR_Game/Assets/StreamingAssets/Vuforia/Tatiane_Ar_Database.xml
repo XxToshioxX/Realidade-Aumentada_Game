@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="red-4656019_1920" size="100.000000 66.666664" />
+    <ImageTarget name="beach-1775122_1920" size="100.000000 66.666664" />
+    <ImageTarget name="sandals-192817_1920" size="100.000000 75.000000" />
+    <ImageTarget name="bolavolei" size="100.000000 81.562500" />
+    <ImageTarget name="sorvetea" size="100.000000 66.666664" />
+    <ImageTarget name="cold-drin" size="100.000000 66.718750" />
+    <ImageTarget name="sand-castle" size="100.000000 66.666664" />
+    <ImageTarget name="prawn" size="100.000000 66.666664" />
+    <ImageTarget name="phone" size="100.000000 63.802082" />
+    <ImageTarget name="house-2368389" size="100.000000 66.666664" />
+    <ImageTarget name="buoy" size="100.000000 66.927086" />
+  </Tracking>
+</QCARConfig>
